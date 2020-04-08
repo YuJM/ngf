@@ -18,6 +18,9 @@
     "paths": {
       "ngf-clipboard": [
         "projects/clipboard/src/public-api.ts"
+      ],
+      "labs": [
+        "projects/labs/src/public-api.ts"
       ]
     }
   },
