@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve carry -o",
-    "build": "ng build",
+    "build:clipboard": "ng build clipboard --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
