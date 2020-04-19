@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LabsModule } from 'labs';
+import { ClipboardModule } from 'ngf-clipboard';
 
 @NgModule({
     declarations: [
@@ -12,7 +13,8 @@ import { LabsModule } from 'labs';
     imports: [
         BrowserModule,
         AppRoutingModule,
-        LabsModule
+        LabsModule,
+        ClipboardModule
     ],
     providers: [],
     bootstrap: [AppComponent]
