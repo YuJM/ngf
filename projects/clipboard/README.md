@@ -1,5 +1,5 @@
 # ngf-clipboard
-
+angular cilpboard module
 ## PeerDependencies
 angular 9
 

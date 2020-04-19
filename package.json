@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve carry -o",
     "build:clipboard": "ng build clipboard --prod",
+    "publish:clipboard": "npm run build:clipboard && npm publish dist/clipboard",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
