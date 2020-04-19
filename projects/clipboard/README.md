@@ -10,7 +10,8 @@ angular 9
 
 ```html
  <p #elRef>test</p>
- <button [ngfClip]="elRef">copy</button>
+ <button [ngfClip]="elRef" (ngfClipOut)="someFunc($event)">copy</button> 
+// $event === {copyText: 'test'}
 ```
 or
 

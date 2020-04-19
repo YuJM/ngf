@@ -17,7 +17,7 @@ import { DOCUMENT } from '@angular/common';
 export class ClipDirective {
 	@Input() ngfClip: TargetTypes;
 	@Input() action: Action;
-	@Output() ngfOut = new EventEmitter();
+	@Output() ngfClipOut = new EventEmitter();
 	hostElement: any;
 	result: string;
 
@@ -53,7 +53,7 @@ export class ClipDirective {
 			elem.setSelectionRange(0, 9999);
 			this.document.execCommand('copy');
 			this.renderer.removeChild(this.document.body, elem);
-			this.ngfOut.next({ copyText: this.result });
+			this.ngfClipOut.next({ copyText: this.result });
 			/*const cp = new clipboard(this.ngfClipboard);
             cp.on('success', (e) => {
                 console.log('Action:', e.action);

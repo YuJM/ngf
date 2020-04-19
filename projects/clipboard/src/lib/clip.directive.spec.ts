@@ -10,7 +10,7 @@ describe('ClipboardDirective', () => {
 		spectator = createDirective(
 			`<p #p>test</p><div [ngfClip]="p" id="cp">Testing Directive</div>`
 		);
-		spectator.directive.ngfOut.subscribe(data => (output = data));
+		spectator.directive.ngfClipOut.subscribe(data => (output = data));
 		spectator.click(spectator.query('#cp'));
 		// spectator.fixture.detectChanges();
 		expect(spectator.directive.result).toBe('test');
