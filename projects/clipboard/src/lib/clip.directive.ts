@@ -35,13 +35,20 @@ export class ClipDirective implements OnInit {
             }
             const elem: HTMLTextAreaElement = this.document.createElement('textarea');
             elem.value = this.result;
+            elem.style.fontSize = '12pt';
+            elem.style.border = '0';
+            elem.style.padding = '0';
+            elem.style.margin = '0';
+            elem.style.position = 'absolute';
+            elem.style.left = '-9999px'
+            elem.setAttribute('readonly', '');
             this.renderer.appendChild(this.document.body, elem);
             // this.document.body.appendChild(elem);
             elem.focus();
             elem.setSelectionRange(0, 9999);
             this.document.execCommand('copy');
-            this.ngfOut.next({copyText: this.result});
             this.renderer.removeChild(this.document.body, elem);
+            this.ngfOut.next({copyText: this.result});
             /*const cp = new clipboard(this.ngfClipboard);
             cp.on('success', (e) => {
                 console.log('Action:', e.action);
