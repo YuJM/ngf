@@ -5,3 +5,4 @@
 export * from './lib/labs.service';
 export * from './lib/labs.component';
 export * from './lib/labs.module';
+export * from './lib/custom-async.pipe';

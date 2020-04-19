@@ -3,9 +3,8 @@ import { LabsComponent } from './labs.component';
 import { CustomAsyncPipe } from './custom-async.pipe';
 
 
-
 @NgModule({
-  declarations: [LabsComponent, CustomAsyncPipe],
+  declarations: [LabsComponent, CustomAsyncPipe ],
   imports: [
   ],
   exports: [LabsComponent, CustomAsyncPipe]
