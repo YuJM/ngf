@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { ClipboardComponent } from './clipboard.component';
-import { ClipboardDirective } from './clipboard.directive';
+import { ClipDirective } from './clip.directive';
 import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
-  declarations: [ClipboardComponent, ClipboardDirective],
+  declarations: [ClipboardComponent, ClipDirective],
   imports: [
       CommonModule
   ],
-  exports: [ClipboardComponent, ClipboardDirective]
+  exports: [ClipboardComponent, ClipDirective]
 })
 export class ClipboardModule { }

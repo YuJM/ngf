@@ -1,11 +1,11 @@
-import { ClipboardDirective } from './clipboard.directive';
+import { ClipDirective } from './clip.directive';
 import { createDirectiveFactory, SpectatorDirective } from '@ngneat/spectator';
 
 describe('ClipboardDirective', () => {
-    let spectator: SpectatorDirective<ClipboardDirective>;
-    const createDirective = createDirectiveFactory(ClipboardDirective);
+    let spectator: SpectatorDirective<ClipDirective>;
+    const createDirective = createDirectiveFactory(ClipDirective);
     beforeEach(() => {
-        spectator = createDirective(`<p #p>test</p><div [ngfClipboard]="p" id="cp">Testing Highlight Directive</div>`);
+        spectator = createDirective(`<p #p>test</p><div [ngfClip]="p" id="cp">Testing Highlight Directive</div>`);
     });
     it('copy test', () => {
         spectator.dispatchMouseEvent(spectator.element, 'click');

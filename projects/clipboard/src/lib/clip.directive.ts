@@ -3,10 +3,10 @@ import { Action, TargetTypes } from './types';
 import { DOCUMENT } from '@angular/common';
 
 @Directive({
-    selector: '[ngfClipboard]'
+    selector: '[ngfClip]'
 })
-export class ClipboardDirective implements OnInit {
-    @Input() ngfClipboard: TargetTypes;
+export class ClipDirective implements OnInit {
+    @Input()ngfClip: TargetTypes;
     @Input() action: Action;
     @Output() ngfOut = new EventEmitter();
     hostElement: any;
@@ -27,11 +27,11 @@ export class ClipboardDirective implements OnInit {
     @HostListener('click', ['$event'])
     hostClick($event) {
         $event.preventDefault();
-        if (!!this.ngfClipboard) {
-            if (this.ngfClipboard instanceof Element) {
-                this.result = this.ngfClipboard.textContent;
-            } else if (typeof this.ngfClipboard === 'string') {
-                this.result = this.ngfClipboard;
+        if (!!this.ngfClip) {
+            if (this.ngfClip instanceof Element) {
+                this.result = this.ngfClip.textContent;
+            } else if (typeof this.ngfClip === 'string') {
+                this.result = this.ngfClip;
             }
             const elem: HTMLTextAreaElement = this.document.createElement('textarea');
             elem.value = this.result;
