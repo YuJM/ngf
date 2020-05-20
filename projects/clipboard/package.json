@@ -1,0 +1,14 @@
+{
+  "name": "ngf-clipboard",
+  "version": "0.2.3-beta",
+  "description": "angular cilpboard module",
+  "author": "YuJM",
+  "repository": "YuJM/ngf",
+  "license": "MIT",
+  "keywords": ["angular", "clipboard", "paste", "angular9"],
+  "peerDependencies": {
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "tslib": "^1.10.0"
+  }
+}

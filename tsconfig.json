@@ -14,7 +14,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngf-clipboard": [
+        "projects/clipboard/src/public-api.ts"
+      ],
+      "labs": [
+        "projects/labs/src/public-api.ts"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
