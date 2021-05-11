@@ -23,7 +23,7 @@
     "@angular/router": "~9.1.0",
     "@ngneat/until-destroy": "^7.1.5",
     "@types/lodash": "^4.14.149",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2",
